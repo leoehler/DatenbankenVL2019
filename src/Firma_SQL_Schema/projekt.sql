@@ -1,10 +1,11 @@
 DROP TABLE IF EXISTS PROJEKT;
+
 CREATE TABLE IF NOT EXISTS PROJEKT
 (
-    PNAME               VARCHAR(100),
+    PNAME               VARCHAR(255),
     PNUMMER             INT,
     PSTANDORT           VARCHAR(100),
-    ABTNR               INT,
+    ABTNR               INT(2),
 
     PRIMARY KEY (PNUMMER)
 );

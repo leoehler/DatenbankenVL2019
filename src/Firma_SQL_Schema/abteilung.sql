@@ -1,8 +1,10 @@
+DROP TABLE IF EXISTS ABTEILUNG;
+
 CREATE TABLE IF NOT EXISTS ABTEILUNG
 (
-    ANAME               VARCHAR(100),
+    ANAME               VARCHAR(255),
     ABTNUMMER           INT,
-    MGRSSN              CHAR(9),
+    MGRSSN              INT,
     MGR_ANFANGSDATUM    DATE,
 
     PRIMARY KEY (ABTNUMMER)
